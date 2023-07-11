@@ -4,6 +4,7 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 manage-system/node_modules/
+manage-system/package-lock.json
 
 # Other files and folders
 .settings/
