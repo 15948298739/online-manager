@@ -8,6 +8,7 @@ manage-system/node_modules/
 # Other files and folders
 .settings/
 */target/*
+*/src/test/*
 
 # Executables
 *.swf
