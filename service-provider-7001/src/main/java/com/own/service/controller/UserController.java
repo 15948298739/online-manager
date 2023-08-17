@@ -4,10 +4,12 @@ import com.own.common.pojo.User;
 import com.own.common.vo.PageResult;
 import com.own.common.vo.SysResult;
 import com.own.service.service.UserService;
+import org.apache.catalina.connector.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 
@@ -21,6 +23,7 @@ public class UserController {
 
     @PostMapping("/login")
     public SysResult login(@RequestBody User user) {
+
         String token = userService.findUserByUP(user);
         if (StringUtils.hasLength(token)) {
             return SysResult.success(token);

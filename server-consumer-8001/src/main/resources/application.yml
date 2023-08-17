@@ -1,0 +1,10 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: service-consumer-8001
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.15:8848
